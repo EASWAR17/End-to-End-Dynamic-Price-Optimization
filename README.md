@@ -50,4 +50,5 @@ Use Azure Machine Learning to deploy the model as a REST service for real-time p
 
 ### Testing
 
-<img width="529" alt="testing" src="https://github.com/user-attachments/assets/aeff0d99-3882-470f-bb62-11bf4b81f5df" />
+![image](https://github.com/user-attachments/assets/7ebda1d4-d453-4c55-bcba-1a2e758442fd)
+
