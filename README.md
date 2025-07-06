@@ -29,3 +29,33 @@ Pandas & NumPy: Libraries for data manipulation and analysis.
 
 Scikit-learn: Library for data preprocessing, model evaluation, and splitting data.
 
+## Steps to Train and Deploy the model
+
+### Clone the Repository:
+
+git clone https://github.com/your-username/End-to-End-Dynamic-Price-Optimization.git
+cd End-to-End-Dynamic-Price-Optimization
+
+Install Dependencies:
+Install all necessary Python libraries:
+
+Create the Conda Environment:
+Save the above content into a file named model-env.yaml and then run the following command to create the environment:
+
+conda env create -f model-env.yaml
+
+Activate the Environment:
+
+Once the environment is created, activate it using:
+
+conda activate model-env
+
+Run the Script:
+Run the train.py script with the necessary arguments:
+
+
+python train.py --training_data path_to_your_data.csv --reg_rate 0.01
+
+
+Deploy on Azure:
+Use Azure Machine Learning services to deploy the model in production for real-time predictions.
