@@ -33,7 +33,6 @@ def main(args):
 
 # function that reads the data
 def get_data(path):
-    #print("Reading data...")
     df = pd.read_csv(path)
     df.drop(['weather', 'date', 'time'], axis=1, inplace=True)
     df['customer_subscription'] = df['customer_subscription'].map({'Free': 0, 'Silver': 1, 'Gold': 2})
@@ -42,7 +41,6 @@ def get_data(path):
 
 
 def split_data(df):
-    #print("Splitting data...")
     X = df.drop('optimized_price', axis=1)
     y = df['optimized_price']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
