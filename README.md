@@ -14,13 +14,14 @@ The project is structured in the following main components:
 - Model Tracking with MLflow: We use MLflow to track model parameters, metrics, and the deployment process, ensuring reproducibility and version control.
 
 ## Technologies Used
-- Python: Programming language used for data processing and model development.
-- XGBoost: An efficient gradient boosting library used for regression tasks.
+```
+- Python                : Programming language used for data processing and model development.
+- XGBoost               : An efficient gradient boosting library used for regression tasks.
 - Azure Machine Learning: Cloud-based platform for deploying and managing models.
-- MLflow: Open-source platform to manage the machine learning lifecycle, including experimentation, reproducibility, and deployment.
-- Pandas & NumPy: Libraries for data manipulation and analysis.
-- Scikit-learn: Library for data preprocessing, model evaluation, and splitting data.
-
+- MLflow                : Open-source platform to manage the machine learning lifecycle, including experimentation, reproducibility, and deployment.
+- Pandas & NumPy        : Libraries for data manipulation and analysis.
+- Scikit-learn          : Library for data preprocessing, model evaluation, and splitting data.
+```
 ## Steps to Train and Deploy the model
 
 ### Clone the Repository:
@@ -32,21 +33,21 @@ cd End-to-End-Dynamic-Price-Optimization
 Install Dependencies:
 
 Create the Conda Environment:
-Save the above content into a file named model-env.yaml and then run the following command to create the environment:
 ```
 conda env create -f model-env.yaml
 ```
 Activate the Environment:
-
-Once the environment is created, activate it using:
 ```
 conda activate model-env
 ```
 Run the Script:
-Run the train.py script with the necessary arguments:
 ```
 python train.py --training_data path_to_your_data.csv --reg_rate 0.01
 ```
 
 Deploy on Azure:
-Use Azure Machine Learning services to deploy the model in production for real-time predictions.
+Use Azure Machine Learning to deploy the model as a REST service for real-time predictions.
+
+### Testing
+
+<img width="529" alt="testing" src="https://github.com/user-attachments/assets/aeff0d99-3882-470f-bb62-11bf4b81f5df" />
